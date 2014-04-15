@@ -16,7 +16,7 @@
     <table tableName="Users" 
         domainObjectName="User" >
         <property name="immutable" value="true" />
-        <generatedKey column="id" sqlStatement="JDBC" />
+        <generatedKey column="id" sqlStatement="JDBC" />        
     </table>
     
     <table tableName="Statuses" 
