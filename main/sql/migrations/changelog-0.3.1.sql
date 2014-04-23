@@ -1,14 +1,14 @@
 --liquibase formatted sql
 
 -- changeset tableRename:1
-ALTER TABLE CaseImages
-	RENAME TO Case_images;
--- rollback ALTER TABLE Case_images RENAME TO CaseImages;
-
--- changeset tableRename:2
 ALTER TABLE DeploymentImages
 	RENAME TO Deployment_images;
 -- rollback ALTER TABLE deployment_images RENAME TO DeploymentImages;
+
+-- changeset tableRename:2
+ALTER TABLE CaseImages
+	RENAME TO Case_images;
+-- rollback ALTER TABLE Case_images RENAME TO CaseImages;
 
 -- changeset tableRename:3
 ALTER TABLE CaseImages
@@ -23,4 +23,4 @@ ALTER TABLE PermissionsOnCases
 -- changeset tableRename:5
 ALTER TABLE PermissionsOnDeployments
 	RENAME TO Permissions_on_deployments
--- lollback ALTER TABLE Permissions_on_deployments RENAME TO PermissionsOnDeployments; 
+-- rollback ALTER TABLE Permissions_on_deployments RENAME TO PermissionsOnDeployments; 
