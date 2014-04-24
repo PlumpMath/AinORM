@@ -10,11 +10,6 @@ ALTER TABLE CaseImages
 	RENAME TO Case_images;
 -- rollback ALTER TABLE Case_images RENAME TO CaseImages;
 
--- changeset tableRename:3
-ALTER TABLE CaseImages
-	RENAME TO Case_images;
--- rollback ALTER TABLE Case_Images RENAME TO CaseImages;
-
 -- changeset tableRename:4
 ALTER TABLE PermissionsOnCases
 	RENAME TO Permissions_on_cases;
