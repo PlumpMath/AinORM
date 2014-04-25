@@ -8,6 +8,10 @@ ALTER TABLE Users
 ALTER TABLE Users
 	RENAME COLUMN realName TO real_name; 
 -- rollback ALTER TABLE Users RENAME real_name TO realName;
+-- changeset columnRename:29
+ALTER TABLE Users
+	RENAME COLUMN passwordHash TO passwond_hash; 
+-- rollback ALTER TABLE Users RENAME password_hash TO passWord;
 
 -- changeset columnRename:3
 ALTER TABLE Deployments
@@ -81,7 +85,7 @@ ALTER TABLE Devices
 
 -- changeset columnRename:19
 ALTER TABLE Devices 
-	ADD COLUMN ip inet;
+	ADD COLUMN ip VARCHAR(15);
 -- rollback ALTER TABLE Devices REMOVE COLUMN ip;
  
 -- changeset columnRename:20
