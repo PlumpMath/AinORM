@@ -10,7 +10,7 @@ ALTER TABLE Users
 -- rollback ALTER TABLE Users RENAME real_name TO realName;
 -- changeset columnRename:29
 ALTER TABLE Users
-	RENAME COLUMN passwordHash TO passwond_hash; 
+	RENAME COLUMN passwordHash TO password_hash; 
 -- rollback ALTER TABLE Users RENAME password_hash TO passWord;
 
 -- changeset columnRename:3
