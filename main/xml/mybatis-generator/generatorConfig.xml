@@ -16,7 +16,7 @@
     <table tableName="Users" 
         domainObjectName="User" >
         <property name="immutable" value="true" />
-        <generatedKey column="id" sqlStatement="JDBC" />
+        <generatedKey column="id" sqlStatement="JDBC" />        
     </table>
     
     <table tableName="Statuses" 
@@ -66,7 +66,7 @@
 		<generatedKey column="id" sqlStatement="JDBC" />
     </table>
     
-    <table tableName="DeploymentImages" 
+    <table tableName="Deployment_images" 
         domainObjectName="DeploymentImage"
         enableUpdateByPrimaryKey="false"
         enableDeleteByPrimaryKey="false"
@@ -75,7 +75,7 @@
         <property name="immutable" value="true" />
     </table>
     
-    <table tableName="CaseImages" 
+    <table tableName="Case_images" 
         domainObjectName="CaseImage"
         enableUpdateByPrimaryKey="false"
         enableDeleteByPrimaryKey="false"
@@ -90,12 +90,12 @@
         <generatedKey column="id" sqlStatement="JDBC" />
     </table>
     
-    <table tableName="PermissionsOnCases"
+    <table tableName="Permissions_on_cases"
         domainObjectName="PermissionsOnCase" >
         <property name="immutable" value="true" />
     </table>
     
-    <table tableName="PermissionsOnDeployments"
+    <table tableName="Permissions_on_deployments"
          domainObjectName="PermissionsOnDeployment" >
         <property name="immutable" value="true" />
     </table>
