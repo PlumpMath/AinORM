@@ -11,7 +11,7 @@ ALTER TABLE Users
 -- changeset columnRename:29
 ALTER TABLE Users
 	RENAME COLUMN passwordHash TO password_hash; 
--- rollback ALTER TABLE Users RENAME password_hash TO passWord;
+-- rollback ALTER TABLE Users RENAME password_hash TO passwordHash;
 
 -- changeset columnRename:3
 ALTER TABLE Deployments
@@ -62,7 +62,7 @@ ALTER TABLE DeploymentImages
 -- changeset columnRename:14
 ALTER TABLE DeploymentImages
 	RENAME deploymentID TO deployment_id;
--- rollback ALTER TABLE DeploymentImages RENAME deployment_id TO doploymentID; 
+-- rollback ALTER TABLE DeploymentImages RENAME deployment_id TO deploymentID; 
 
 
 -- changeset columnRename:15
