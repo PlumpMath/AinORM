@@ -53,7 +53,7 @@ INSERT INTO Statuses
 -- changeset testdata:11 context:WITH_TEST_DATA
 INSERT INTO Statuses
 	VALUES (2, 'Utredning avslutad', 'Inga problem att lösa det här');
--- rollback DELETE FROM Priorities WHERE id=0;
+-- rollback DELETE FROM Priorities WHERE id=2;
 
 -- changeset testdata:12 context:WITH_TEST_DATA
 INSERT INTO Users(user_name, real_name)
